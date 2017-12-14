@@ -1,0 +1,34 @@
+
+
+Tests for the available scalars and using yaml output
+ ==================================================
+TO DO:
+ *docs of functions 
+ *what more else?
+./20190101/00000003/ql-countpix-z0-00000003.yaml
+countpix loaded
+./20190101/00000003/ql-getbias-z0-00000003.yaml
+getbias loaded
+./20190101/00000003/ql-getrms-z0-00000003.yaml
+getrms loaded
+./20190101/00000003/ql-xwsigma-z0-00000003.yaml
+xwsigma loaded
+./20190101/00000003/ql-countbins-z0-00000003.yaml
+countbins loaded
+./20190101/00000003/ql-integ-z0-00000003.yaml
+integ loaded
+./20190101/00000003/ql-skycont-z0-00000003.yaml
+skycont loaded
+./20190101/00000003/ql-skypeak-z0-00000003.yaml
+skypeak loaded
+./20190101/00000003/ql-skyresid-z0-00000003.yaml
+skyresid loaded
+./20190101/00000003/ql-snr-z0-00000003.yaml
+snr loaded
+{'countpix': {'alarm': 'NPIX_ALARM_RANGE', 'warn': 'NPIX_WARN_RANGE'}, 'countbins': {'alarm': 'NGOOD_ALARM_RANGE', 'warn': 'NGOOD_WARN_RANGE'}, 'skypeak': {'alarm': 'SUMCOUNT_ALARM_RANGE', 'warn': 'SUMCOUNT_WARN_RANGE'}, 'snr': {'alarm': 'FIDSNR_ALARM_RANGE', 'warn': 'FIDSNR_WARN_RANGE'}, 'wsigma': {'alarm': 'WSHIFT_ALARM_RANGE', 'warn': 'WSHIFT_WARN_RANGE'}, 'skycont': {'alarm': 'SKYCONT_ALARM_RANGE', 'warn': 'SKYCONT_WARN_RANGE'}, 'getbias': {'alarm': 'DIFF_ALARM_RANGE', 'warn': 'DIFF_WARN_RANGE'}, 'getrms': {'alarm': 'RMS_ALARM_RANGE', 'warn': 'RMS_WARN_RANGE'}, 'xsigma': {'alarm': 'XSHIFT_ALARM_RANGE', 'warn': 'XSHIFT_WARN_RANGE'}, 'skyresid': {'alarm': 'SKY_ALARM_RANGE', 'warn': 'SKY_WARN_RANGE'}, 'integ': {'alarm': 'MAGDIFF_ALARM_RANGE', 'warn': 'MAGDIFF_WARN_RANGE'}}
+[-1.0, 1.0]
+ALARM
+
+Evaluated here:
+
+getbias: 	NORMAL
