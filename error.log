@@ -32,3 +32,10 @@ ALARM
 Evaluated here:
 
 getbias: 	NORMAL
+
+Traceback (most recent call last):
+  File "scalar_metrics.py", line 241, in <module>
+    print('{}: \t{}'.format(i, lm.qa_status(i) ))
+  File "scalar_metrics.py", line 217, in qa_status
+    elif ( val <= alarm[0] or val >= alarm[1]): # ">=" comes from pipeline definition!
+TypeError: unorderable types: list() <= float()
