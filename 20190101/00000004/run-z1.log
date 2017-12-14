@@ -1,0 +1,78 @@
+2017-12-14 12:16:41,276 QuickLook INFO : Running Quicklook using configuration file /app/desispec/py/desispec/data/quicklook/qlconfig_dark.yaml
+2017-12-14 12:16:41,469 QuickLook INFO : Building Full Configuration
+2017-12-14 12:16:42,674 QuickLook INFO : Checking if all the necessary files exist.
+2017-12-14 12:16:42,677 QuickLook INFO : File check: Okay: /app/spectro/data/20190101/desi-00000004.fits.fz
+2017-12-14 12:16:42,678 QuickLook INFO : File check: Okay: /app/spectro/data/20190101/fibermap-00000004.fits
+2017-12-14 12:16:42,680 QuickLook INFO : File check: Okay: /app/spectro/redux/calib2d/20190101/fiberflat-z1-00000001.fits
+2017-12-14 12:16:42,682 QuickLook INFO : File check: Okay: /app/spectro/redux/calib2d/psf/20190101/psfboot-z1.fits
+2017-12-14 12:16:42,682 QuickLook INFO : All necessary files exist for science configuration.
+2017-12-14 12:16:44,993 QuickLook INFO : Reading Configuration
+2017-12-14 12:16:46,149 QuickLook INFO : Reading input file /app/spectro/data/20190101/desi-00000004.fits.fz
+2017-12-14 12:16:46,253 QuickLook INFO : Reading fiberMap file /app/spectro/data/20190101/fibermap-00000004.fits
+2017-12-14 12:16:46,569 QuickLook INFO : Reading FiberFlat /app/spectro/redux/calib2d/20190101/fiberflat-z1-00000001.fits
+2017-12-14 12:16:47,102 QuickLook INFO : Finished reading all static files
+2017-12-14 12:16:48,383 QuickLook INFO : Starting to run step Initialize
+2017-12-14 12:16:48,384 QuickLook INFO : Running Initialize
+2017-12-14 12:16:48,493 QuickLook INFO : Running Bias_From_Overscan
+2017-12-14 12:16:53,455 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-getbias-z1-00000004.yaml
+2017-12-14 12:16:53,462 QuickLook INFO : Running Bias_From_Overscan
+2017-12-14 12:16:56,041 QuickLook INFO : Starting to run step Preproc
+2017-12-14 12:16:56,093 QuickLook INFO : Running Preproc
+INFO:preproc.py:253:read_ccd_calibration: Found 3 data for camera z1 in filename /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+2017-12-14 12:16:56,710 DESI INFO : Found 3 data for camera z1 in filename /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+INFO:preproc.py:254:read_ccd_calibration: Finding matching version ...
+2017-12-14 12:16:56,717 DESI INFO : Finding matching version ...
+INFO:preproc.py:260:read_ccd_calibration: DATE-OBS=20190101
+2017-12-14 12:16:56,740 DESI INFO : DATE-OBS=20190101
+INFO:preproc.py:264:read_ccd_calibration: Checking version SIM
+2017-12-14 12:16:57,101 DESI INFO : Checking version SIM
+INFO:preproc.py:284:read_ccd_calibration: Found data version SIM for camera z1 in /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+2017-12-14 12:16:57,103 DESI INFO : Found data version SIM for camera z1 in /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+INFO:preproc.py:264:read_ccd_calibration: Checking version V0
+2017-12-14 12:16:57,104 DESI INFO : Checking version V0
+INFO:preproc.py:275:read_ccd_calibration: Skip version V0 with DETECTOR=lbnl_4kx4k_1002_reverse != SIM
+2017-12-14 12:16:57,105 DESI INFO : Skip version V0 with DETECTOR=lbnl_4kx4k_1002_reverse != SIM
+INFO:preproc.py:264:read_ccd_calibration: Checking version V-1
+2017-12-14 12:16:57,106 DESI INFO : Checking version V-1
+INFO:preproc.py:272:read_ccd_calibration: Skip version V-1 with DATE-OBS-END=20161214 < DATE-OBS=20190101
+2017-12-14 12:16:57,108 DESI INFO : Skip version V-1 with DATE-OBS-END=20161214 < DATE-OBS=20190101
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV1 in header and nothing in calib data; using 200000
+2017-12-14 12:16:57,438 DESI WARNING : Missing keyword SATURLEV1 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2064
+2017-12-14 12:16:57,474 DESI INFO : nrows in overscan=2064
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 1 of camera z1
+2017-12-14 12:16:57,476 DESI INFO : Subtracting average overscan for amplifier 1 of camera z1
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 2.911338 188.187703
+2017-12-14 12:16:58,136 DESI INFO : Median rdnoise and overscan= 2.911338 188.187703
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 1 = 2.911338
+2017-12-14 12:16:58,547 DESI INFO : Measured readnoise for AMP 1 = 2.911338
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV2 in header and nothing in calib data; using 200000
+2017-12-14 12:16:59,938 DESI WARNING : Missing keyword SATURLEV2 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2064
+2017-12-14 12:16:59,940 DESI INFO : nrows in overscan=2064
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 2 of camera z1
+2017-12-14 12:16:59,941 DESI INFO : Subtracting average overscan for amplifier 2 of camera z1
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 2.911244 180.304612
+2017-12-14 12:17:00,199 DESI INFO : Median rdnoise and overscan= 2.911244 180.304612
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 2 = 2.911244
+2017-12-14 12:17:00,220 DESI INFO : Measured readnoise for AMP 2 = 2.911244
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV3 in header and nothing in calib data; using 200000
+2017-12-14 12:17:00,330 DESI WARNING : Missing keyword SATURLEV3 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2064
+2017-12-14 12:17:00,332 DESI INFO : nrows in overscan=2064
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 3 of camera z1
+2017-12-14 12:17:00,333 DESI INFO : Subtracting average overscan for amplifier 3 of camera z1
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 2.923145 151.091298
+2017-12-14 12:17:00,344 DESI INFO : Median rdnoise and overscan= 2.923145 151.091298
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 3 = 2.923145
+2017-12-14 12:17:00,353 DESI INFO : Measured readnoise for AMP 3 = 2.923145
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV4 in header and nothing in calib data; using 200000
+2017-12-14 12:17:00,475 DESI WARNING : Missing keyword SATURLEV4 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2064
+2017-12-14 12:17:00,476 DESI INFO : nrows in overscan=2064
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 4 of camera z1
+2017-12-14 12:17:00,477 DESI INFO : Subtracting average overscan for amplifier 4 of camera z1
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 2.906882 156.539438
+2017-12-14 12:17:00,486 DESI INFO : Median rdnoise and overscan= 2.906882 156.539438
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 4 = 2.906882
+2017-12-14 12:17:00,563 DESI INFO : Measured readnoise for AMP 4 = 2.906882

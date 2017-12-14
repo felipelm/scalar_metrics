@@ -1,0 +1,125 @@
+2017-12-14 12:16:40,672 QuickLook INFO : Running Quicklook using configuration file /app/desispec/py/desispec/data/quicklook/qlconfig_dark.yaml
+2017-12-14 12:16:40,903 QuickLook INFO : Building Full Configuration
+2017-12-14 12:16:42,606 QuickLook INFO : Checking if all the necessary files exist.
+2017-12-14 12:16:42,608 QuickLook INFO : File check: Okay: /app/spectro/data/20190101/desi-00000004.fits.fz
+2017-12-14 12:16:42,610 QuickLook INFO : File check: Okay: /app/spectro/data/20190101/fibermap-00000004.fits
+2017-12-14 12:16:42,613 QuickLook INFO : File check: Okay: /app/spectro/redux/calib2d/20190101/fiberflat-b0-00000001.fits
+2017-12-14 12:16:42,615 QuickLook INFO : File check: Okay: /app/spectro/redux/calib2d/psf/20190101/psfboot-b0.fits
+2017-12-14 12:16:42,616 QuickLook INFO : All necessary files exist for science configuration.
+2017-12-14 12:16:45,011 QuickLook INFO : Reading Configuration
+2017-12-14 12:16:46,131 QuickLook INFO : Reading input file /app/spectro/data/20190101/desi-00000004.fits.fz
+2017-12-14 12:16:46,232 QuickLook INFO : Reading fiberMap file /app/spectro/data/20190101/fibermap-00000004.fits
+2017-12-14 12:16:46,901 QuickLook INFO : Reading FiberFlat /app/spectro/redux/calib2d/20190101/fiberflat-b0-00000001.fits
+2017-12-14 12:16:47,666 QuickLook INFO : Finished reading all static files
+2017-12-14 12:16:49,115 QuickLook INFO : Starting to run step Initialize
+2017-12-14 12:16:49,116 QuickLook INFO : Running Initialize
+2017-12-14 12:16:49,229 QuickLook INFO : Running Bias_From_Overscan
+2017-12-14 12:16:55,880 QuickLook INFO : Running Bias_From_Overscan
+2017-12-14 12:16:57,478 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-getbias-b0-00000004.yaml
+2017-12-14 12:16:59,159 QuickLook INFO : Starting to run step Preproc
+2017-12-14 12:16:59,193 QuickLook INFO : Running Bias_From_Overscan
+2017-12-14 12:16:59,876 QuickLook INFO : Running Preproc
+INFO:preproc.py:253:read_ccd_calibration: Found 1 data for camera b0 in filename /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+2017-12-14 12:17:01,624 DESI INFO : Found 1 data for camera b0 in filename /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+INFO:preproc.py:254:read_ccd_calibration: Finding matching version ...
+2017-12-14 12:17:01,627 DESI INFO : Finding matching version ...
+INFO:preproc.py:260:read_ccd_calibration: DATE-OBS=20190101
+2017-12-14 12:17:01,644 DESI INFO : DATE-OBS=20190101
+INFO:preproc.py:264:read_ccd_calibration: Checking version SIM
+2017-12-14 12:17:01,645 DESI INFO : Checking version SIM
+INFO:preproc.py:284:read_ccd_calibration: Found data version SIM for camera b0 in /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+2017-12-14 12:17:01,645 DESI INFO : Found data version SIM for camera b0 in /app/desispec/py/desispec/data/ccd/ccd_calibration.yaml
+2017-12-14 12:17:04,466 QuickLook INFO : Running Preproc
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV1 in header and nothing in calib data; using 200000
+2017-12-14 12:17:05,865 DESI WARNING : Missing keyword SATURLEV1 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2048
+2017-12-14 12:17:05,884 DESI INFO : nrows in overscan=2048
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 1 of camera b0
+2017-12-14 12:17:05,888 DESI INFO : Subtracting average overscan for amplifier 1 of camera b0
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 3.019897 193.633340
+2017-12-14 12:17:05,950 DESI INFO : Median rdnoise and overscan= 3.019897 193.633340
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 1 = 3.019897
+2017-12-14 12:17:05,984 DESI INFO : Measured readnoise for AMP 1 = 3.019897
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV2 in header and nothing in calib data; using 200000
+2017-12-14 12:17:06,096 DESI WARNING : Missing keyword SATURLEV2 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2048
+2017-12-14 12:17:06,097 DESI INFO : nrows in overscan=2048
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 2 of camera b0
+2017-12-14 12:17:06,098 DESI INFO : Subtracting average overscan for amplifier 2 of camera b0
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 3.015994 153.565615
+2017-12-14 12:17:06,105 DESI INFO : Median rdnoise and overscan= 3.015994 153.565615
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 2 = 3.015994
+2017-12-14 12:17:06,113 DESI INFO : Measured readnoise for AMP 2 = 3.015994
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV3 in header and nothing in calib data; using 200000
+2017-12-14 12:17:06,256 DESI WARNING : Missing keyword SATURLEV3 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2048
+2017-12-14 12:17:06,258 DESI INFO : nrows in overscan=2048
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 3 of camera b0
+2017-12-14 12:17:06,259 DESI INFO : Subtracting average overscan for amplifier 3 of camera b0
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 3.010252 165.148271
+2017-12-14 12:17:06,273 DESI INFO : Median rdnoise and overscan= 3.010252 165.148271
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 3 = 3.010252
+2017-12-14 12:17:06,280 DESI INFO : Measured readnoise for AMP 3 = 3.010252
+WARNING:preproc.py:533:preproc: Missing keyword SATURLEV4 in header and nothing in calib data; using 200000
+2017-12-14 12:17:06,353 DESI WARNING : Missing keyword SATURLEV4 in header and nothing in calib data; using 200000
+INFO:preproc.py:537:preproc: nrows in overscan=2048
+2017-12-14 12:17:06,355 DESI INFO : nrows in overscan=2048
+INFO:preproc.py:552:preproc: Subtracting average overscan for amplifier 4 of camera b0
+2017-12-14 12:17:06,355 DESI INFO : Subtracting average overscan for amplifier 4 of camera b0
+INFO:preproc.py:560:preproc: Median rdnoise and overscan= 3.013735 197.585791
+2017-12-14 12:17:06,362 DESI INFO : Median rdnoise and overscan= 3.013735 197.585791
+INFO:preproc.py:587:preproc: Measured readnoise for AMP 4 = 3.013735
+2017-12-14 12:17:06,369 DESI INFO : Measured readnoise for AMP 4 = 3.013735
+INFO:cosmics.py:161:reject_cosmic_rays_ala_sdss: starting with nsig=6.0 cfudge=3.0 c2fudge=0.8
+2017-12-14 12:17:07,166 DESI INFO : starting with nsig=6.0 cfudge=3.0 c2fudge=0.8
+2017-12-14 12:17:09,453 QuickLook INFO : Running Preproc
+INFO:cosmics.py:166:reject_cosmic_rays_ala_sdss: first pass: 0 pixels rejected
+2017-12-14 12:17:12,067 DESI INFO : first pass: 0 pixels rejected
+INFO:cosmics.py:212:reject_cosmic_rays_ala_sdss: end : 0 pixels rejected
+2017-12-14 12:17:12,332 DESI INFO : end : 0 pixels rejected
+2017-12-14 12:17:12,511 QuickLook INFO : Running Calc_XWSigma
+2017-12-14 12:17:13,633 QuickLook WARNING : Failed to run QA Calc_XWSigma error was Optimal parameters not found: Number of calls to function has reached maxfev = 800.
+2017-12-14 12:17:13,634 QuickLook INFO : Running Get_RMS
+2017-12-14 12:17:15,115 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-getrms-b0-00000004.yaml
+2017-12-14 12:17:15,212 QuickLook INFO : Running Count_Pixels
+2017-12-14 12:17:16,132 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-countpix-b0-00000004.yaml
+2017-12-14 12:17:16,134 QuickLook INFO : Starting to run step BoxcarExtract
+2017-12-14 12:17:16,228 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:21,210 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:26,216 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:31,137 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:36,158 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:41,220 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:46,159 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:51,205 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:17:56,150 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:18:01,197 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:18:06,142 QuickLook INFO : Running BoxcarExtract
+2017-12-14 12:18:11,000 QuickLook INFO : Running CountSpectralBins
+2017-12-14 12:18:11,996 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-countbins-b0-00000004.yaml
+2017-12-14 12:18:11,998 QuickLook INFO : Starting to run step ApplyFiberFlat_QL
+2017-12-14 12:18:12,034 QuickLook INFO : Running ApplyFiberFlat_QL
+2017-12-14 12:18:12,638 QuickLook INFO : Running Sky_Peaks
+2017-12-14 12:18:14,870 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-skypeak-b0-00000004.yaml
+2017-12-14 12:18:14,946 QuickLook INFO : Running Sky_Continuum
+2017-12-14 12:18:15,432 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-skycont-b0-00000004.yaml
+2017-12-14 12:18:15,433 QuickLook INFO : Starting to run step SkySub_QL
+2017-12-14 12:18:15,475 QuickLook INFO : Running SkySub_QL
+2017-12-14 12:18:15,476 QuickLook INFO : No sky file given. Computing sky first
+2017-12-14 12:18:15,509 QuickLook INFO : Apply fiber to fiber resolution variation in computing sky
+2017-12-14 12:18:15,578 QuickLook INFO : Running Sky_Residual
+WARNING:qalib.py:292:sky_resid: Bad Sky Subtraction in 2 fibers
+2017-12-14 12:18:15,590 DESI WARNING : Bad Sky Subtraction in 2 fibers
+INFO:qalib.py:296:sky_resid: Median residual for sky fibers = 0.552302
+2017-12-14 12:18:15,592 DESI INFO : Median residual for sky fibers = 0.552302
+2017-12-14 12:18:16,188 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-skyresid-b0-00000004.yaml
+2017-12-14 12:18:16,211 QuickLook INFO : Running Integrate_Spec
+2017-12-14 12:18:16,699 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-integ-b0-00000004.yaml
+2017-12-14 12:18:16,740 QuickLook INFO : Running Calculate_SNR
+2017-12-14 12:18:16,917 QuickLook INFO : Output QA data is in /app/spectro/redux/exposures/20190101/00000004/ql-snr-b0-00000004.yaml
+2017-12-14 12:18:16,950 QuickLook INFO : Pipeline processing finished. Serializing result
+2017-12-14 12:18:16,960 QuickLook INFO : Merging all the QAs for this pipeline execution
+2017-12-14 12:18:19,161 QuickLook INFO : Wrote merged QA file /app/spectro/redux/calib2d/20190101/ql-mergedQA-b0-00000004.yaml
+WARNING: AstropyDeprecationWarning: "clobber" was deprecated in version 2.0 and will be removed in a future version. Use argument "overwrite" instead. [astropy.utils.decorators]
+2017-12-14 12:18:19,246 astropy WARNING : AstropyDeprecationWarning: "clobber" was deprecated in version 2.0 and will be removed in a future version. Use argument "overwrite" instead.
+2017-12-14 12:18:19,601 QuickLook INFO : Pipeline completed. Final result is in /app/spectro/redux/exposures/20190101/00000004/sframe-b0-00000004.fits
